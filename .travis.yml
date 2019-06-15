@@ -13,8 +13,8 @@ before_install:
 install:
   - npm install   #安装hexo及插件
 
-before_script:
-  - git clone --branch master https://github.com/csulibiao/csulibiao.github.io.git public
+#before_script:
+#  - git clone --branch master https://github.com/csulibiao/csulibiao.github.io.git public
         #获取最新的commit信息
 
 script:
