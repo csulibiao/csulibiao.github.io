@@ -5,8 +5,8 @@ cache:
     directories:
         - node_modules    #据说可以减少travis构建时间
 
-before_install:
-    - git clone https://github.com/theme-next/hexo-theme-next themes/next
+#before_install:
+#    - git clone https://github.com/theme-next/hexo-theme-next themes/next
        #自己配置一个主题，也是乐趣之一，特效什么的，不过我还是偏好简洁（Next主题用的人真是多啊）
 
 # S: Build Lifecycle
