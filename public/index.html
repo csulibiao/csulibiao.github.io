@@ -198,6 +198,13 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
 </script>
 
 
+
+
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
@@ -361,7 +368,7 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Binary Li">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/guitar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -427,6 +434,19 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/06/16/first-log/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/16/first-log/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -527,7 +547,7 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Binary Li">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/guitar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -593,6 +613,19 @@ const loadScript = function loadScript(c,b){var a=document.createElement("script
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/06/15/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/15/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -704,10 +737,16 @@ Quick
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/guitar.jpg" alt="Binary Li">
+            
               <p class="site-author-name" itemprop="name">Binary Li</p>
               <div class="site-description motion-element" itemprop="description"></div>
           </div>
+          
+		  
 
+		  
+		  
           
             <nav class="site-state motion-element">
               
@@ -732,6 +771,32 @@ Quick
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/csulibiao" title="GitHub &rarr; https://github.com/csulibiao" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/csulibiao" title="Twitter &rarr; https://twitter.com/csulibiao" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
 
           
 
@@ -747,10 +812,40 @@ Quick
       </div>
 
       
-
+	  
+	  
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-" aria-hidden="true"></i>
+        近期文章
+      </div>
+      <ul class="links-of-blogroll-list">
+        
+        
+          <li>
+            <a href="/2019/06/16/first-log/" title="first log" target="_blank">first log</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/15/hello-world/" title="Hello World" target="_blank">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+	  
+	  
+	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="340" height="86" src="//music.163.com/outchain/player?type=2&id=22822530&auto=1&height=66">
+	  </iframe>
+	  
       
+	  
+	  
 
     </div>
+	
+	
+	
   </aside>
   
 
@@ -922,6 +1017,36 @@ Quick
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'UD12GI1DQ6CXJrxrFMwRp3dm-gzGzoHsz',
+    appKey: '2exilBNQixnuH74t8ztgW0Rl',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script>
+
+
 
 
 

@@ -197,11 +197,11 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
+  GitHub: https://github.com/csulibiao || github
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
+  Twitter: https://twitter.com/csulibiao || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -227,13 +227,13 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/guitar.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
-  rotated: false
+  rotated: true
 
 # Table Of Contents in the Sidebar
 toc:
@@ -634,16 +634,16 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  appid:  UD12GI1DQ6CXJrxrFMwRp3dm-gzGzoHsz # your leancloud application appid
+  appkey:  2exilBNQixnuH74t8ztgW0Rl # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  verify: true # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
-  language: # language, available values: en, zh-cn
+  language: zh-cn # language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # if false, comment count will only be displayed in post page, not in home page
 
@@ -703,18 +703,19 @@ gitalk:
 # Likely supports four looks, nine social networks, any button text
 # You are free to modify the text value and order of any network
 likely:
-  enable: false
+  enable: true
   look: normal # available values: normal, light, small, big
   networks:
     twitter: Tweet
     facebook: Share
-    linkedin: Link
-    gplus: Plus
-    vkontakte: Share
-    odnoklassniki: Class
+    #linkedin: Link
+    #gplus: Plus
+    #vkontakte: Share
+    #odnoklassniki: Class
     telegram: Send
-    whatsapp: Send
-    pinterest: Pin
+    #whatsapp: Send
+    #pinterest: Pin
+    
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
@@ -1213,4 +1214,11 @@ css: css
 js: js
 images: images
 
+# Fireworks
+fireworks: true
+
+#近期文章
+recent_posts_title: 近期文章
+recent_posts_layout: block
+recent_posts: true
 

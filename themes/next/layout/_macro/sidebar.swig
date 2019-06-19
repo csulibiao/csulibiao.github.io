@@ -34,7 +34,11 @@
               <p class="site-author-name" itemprop="name">{{ author }}</p>
               <div class="site-description motion-element" itemprop="description">{{ description }}</div>
           </div>
+          
+		  
 
+		  
+		  
           {% if theme.site_state %}
             <nav class="site-state motion-element">
               {% if config.archive_dir != '/' and site.posts.length > 0 %}
@@ -196,7 +200,29 @@
         </div>
       <!--/noindex-->
       {% endif %}
-
+	  
+	  {% if theme.recent_posts %}
+    <div class="links-of-blogroll motion-element {{ "links-of-blogroll-" + theme.recent_posts_layout  }}">
+      <div class="links-of-blogroll-title">
+        <!-- modify icon to fire by szw -->
+        <i class="fa fa-history fa-{{ theme.recent_posts_icon | lower }}" aria-hidden="true"></i>
+        {{ theme.recent_posts_title }}
+      </div>
+      <ul class="links-of-blogroll-list">
+        {% set posts = site.posts.sort('-date') %}
+        {% for post in posts.slice('0', '5') %}
+          <li>
+            <a href="{{ url_for(post.path) }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+	  {% endif %}
+	  
+	  <iframe 
+	  frameborder="no" border="0" marginwidth="0" marginheight="0" width=340 height=86 src="//music.163.com/outchain/player?type=2&id=22822530&auto=1&height=66">
+	  </iframe>
+	  
       {% if theme.back2top.enable and theme.back2top.sidebar %}
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
@@ -205,8 +231,13 @@
           {% endif %}
         </div>
       {% endif %}
+	  
+	  
 
     </div>
+	
+	
+	
   </aside>
   {% if theme.sidebar.dimmer %}
     <div id="sidebar-dimmer"></div>
