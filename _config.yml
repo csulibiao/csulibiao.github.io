@@ -85,6 +85,9 @@ deploy:
 
 admin:
   deployCommand: ./admin_script/hexo-d.sh
+  username: csulibiao
+  password_hash: $2a$10$2I7WRNobgeyFILOxsDG05OEdKFjF0cKt5c1ig6bX.VNNiLBya9GLe
+  secret: my super secret phrase
 
 search:
   path: search.xml
