@@ -5,6 +5,9 @@
   "hexo": {
     "version": "3.9.0"
   },
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "hexo": "^3.9.0",
     "hexo-admin": "^2.3.0",
