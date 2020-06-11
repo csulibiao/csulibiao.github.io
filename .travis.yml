@@ -22,11 +22,13 @@ install:
         #获取最新的commit信息
 
 script:
+  - ls -l
   - hexo clean   #清除
   - hexo g   #生成
 
 after_script:
   - cd ./public
+  - ls -l
   - git init
   - git config user.name "csulibiao"   #修改成自己的github用户名
   - git config user.email "libiaozhijia@gmail.com"   #修改成自己的GitHub邮箱
