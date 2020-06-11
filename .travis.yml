@@ -1,17 +1,20 @@
 language: node_js   #设置语言
 node_js: stable     #设置相应的版本
 
-#cache:
- #   directories:
-  #      - node_modules    #据说可以减少travis构建时间
+sudo: required
+cache:
+    directories:
+        - node_modules    #据说可以减少travis构建时间
 
-#before_install:
-#    - git clone https://github.com/theme-next/hexo-theme-next themes/next
+before_install:
+    - export TZ='Asia/Shanghai'
+    - npm install -g hexo-cli
        #自己配置一个主题，也是乐趣之一，特效什么的，不过我还是偏好简洁（Next主题用的人真是多啊）
 
 # S: Build Lifecycle
 install:
-  - npm install hexo
+  - npm install
+  - npm install hexo-deployer-git --save
 
 
 #before_script:
@@ -28,7 +31,7 @@ after_script:
   - git config user.name "csulibiao"   #修改成自己的github用户名
   - git config user.email "libiaozhijia@gmail.com"   #修改成自己的GitHub邮箱
   - git add .
-  - git commit -a -m "Travis CI Auto Builder"
+  - git commit -a -m "Travis CI Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
   - git push --force --quiet "https://${GITHUB_ACCESS_TOKEN}@${GH_REF}" master:master #GITHUB_ACCESS_TOKEN就是在travis中设置的token
 
 branches:
