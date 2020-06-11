@@ -25,6 +25,7 @@ script:
   - ls -l
   - hexo clean   #清除
   - hexo g   #生成
+  - ls -l
 
 after_script:
   - cd ./public
