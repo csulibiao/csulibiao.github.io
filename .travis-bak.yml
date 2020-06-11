@@ -23,12 +23,17 @@ script:
   - hexo g   #生成
 
 after_script:
+  - git clone https://${GH_REF} .deploy_git
+  - cd .deploy_git
+  - git checkout master
+  - cd ../
+  - mv .deploy_git/.git/ ./public/
   - cd ./public
   - git init
   - git config user.name "csulibiao"   #修改成自己的github用户名
   - git config user.email "libiaozhijia@gmail.com"   #修改成自己的GitHub邮箱
   - git add .
-  - git commit -a -m "Travis CI Auto Builder"
+  - git commit -m "Travis CI Auto Builder"
   - git push --force --quiet "https://${GITHUB_ACCESS_TOKEN}@${GH_REF}" master:master #GITHUB_ACCESS_TOKEN就是在travis中设置的token
 
 branches:
