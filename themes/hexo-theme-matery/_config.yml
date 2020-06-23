@@ -305,7 +305,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: UD12GI1DQ6CXJrxrFMwRp3dm-gzGzoHsz
   appKey: 2exilBNQixnuH74t8ztgW0Rl
   notify: false
@@ -321,7 +321,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: false
+  enable: ture
   appId: UD12GI1DQ6CXJrxrFMwRp3dm-gzGzoHsz # Your leancloud application appid
   appKey: 2exilBNQixnuH74t8ztgW0Rl # Your leancloud application appkey
   mode: DesertsP # DesertsP or xCss
