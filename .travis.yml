@@ -1,5 +1,6 @@
 language: node_js   #设置语言
-node_js: stable     #设置相应的版本
+node_js: 
+    - lts/*     #设置相应的版本
 
 sudo: required
 cache:
@@ -8,13 +9,12 @@ cache:
 
 before_install:
     - export TZ='Asia/Shanghai'
-    - npm install -g hexo-cli
        #自己配置一个主题，也是乐趣之一，特效什么的，不过我还是偏好简洁（Next主题用的人真是多啊）
 
 # S: Build Lifecycle
 install:
+  - npm install hexo-cli -g
   - npm install
-  - npm audit
   - npm install hexo-deployer-git --save
 
 
@@ -25,7 +25,7 @@ install:
 script:
   - ls -l
   - hexo clean   #清除
-  - hexo g   #生成
+  - hexo generate   #生成
   - ls -l
 
 after_script:
