@@ -98,7 +98,7 @@ video:
   showTitle: true
   title: 清晨序曲
   url: /medias/videos/demo.flv
-  pic: /medias/videos/demo-pic.png
+  pic:  #/medias/videos/demo-pic.png
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
