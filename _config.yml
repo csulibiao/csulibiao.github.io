@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Keep It Simple!
-subtitle: Live Binary
+title: 潇湘忆故人
+subtitle: 且听风吟，漫看花开
 description:
 keywords:
-author: Binary Li
+author: 潇湘忆
 language: zh-CN
-timezone:
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

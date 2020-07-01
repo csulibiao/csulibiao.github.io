@@ -1,13 +1,13 @@
 ---
-title: first log
-author: Binary Li
+title: 第一篇博客
+author: 潇湘忆
 tags: 
   - Blog
 categories: 文章
 cover: true
 top: true
 summary: This is my first blog.
-date: 2019-06-16 03:29:00
+date: 2020-06-16 03:29:00
 ---
 # This is my first blog #
 
