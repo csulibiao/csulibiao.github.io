@@ -97,7 +97,7 @@ video:
   enable: true
   showTitle: true
   title: 清晨序曲
-  url: https://www.bilibili.com/video/BV1yW411P7V3 #/medias/videos/demo.flv
+  url: /medias/videos/demo.mp4
   pic:  #/medias/videos/demo-pic.png
   thumbnails:
   height: # 如：400
