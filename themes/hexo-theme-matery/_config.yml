@@ -328,7 +328,7 @@ minivaline:
   enable: ture
   appId: sGoLYckzN4Cvwjg2m17Pn6PN-MdYXbMMI # Your leancloud application appid
   appKey: 8w6nCRJ7EayU1JCeBVpO4LcT # Your leancloud application appkey
-  mode: DesertsP # DesertsP or xCss
+  mode: xCss # DesertsP or xCss
   placeholder: Write a Comment # Comment box placeholder
   math: true # Support MathJax.
   md: true # Support Markdown.
