@@ -5,7 +5,6 @@ tags:
   - Blog
 categories: 文章
 cover: true
-img: http://static.blinkfox.com/2019-02-14.jpg
 top: true
 summary: This is my first blog.
 date: 2020-06-16 03:29:00
