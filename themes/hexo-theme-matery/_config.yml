@@ -124,7 +124,7 @@ logo: /medias/logo.png
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
-  enable: true
+  enable: false
   name: Github
   icon: fab fa-github-alt
   url: https://github.com/csulibiao/csulibiao.github.io
@@ -134,7 +134,7 @@ indexbtn:
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
   github:  https://github.com/csulibiao
-  email: 283052975@qq.com
+  email: iamlibiao@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
   qq: 283052975
@@ -180,7 +180,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: false
+  enable: true
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -190,7 +190,7 @@ mathjax:
 # 文章信息--若要开启文章字数统计，需要安装 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 postInfo:
   date: true # 发布日期
-  update: false # 更新日期
+  update: true # 更新日期
   wordCount: true # 文章字数统计
   totalCount: true # 站点总文章字数
   min2read: true # 文章阅读时长
@@ -205,7 +205,7 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: A non-stop Learner
+  career: A Non-stop Learner
   introduction: Anyway, tomorrow is another day.
 
 # config my projects informations in about page.
@@ -310,8 +310,8 @@ livere:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: false
-  appId: UD12GI1DQ6CXJrxrFMwRp3dm-gzGzoHsz
-  appKey: 2exilBNQixnuH74t8ztgW0Rl
+  appId: sGoLYckzN4Cvwjg2m17Pn6PN-MdYXbMMI
+  appKey: 8w6nCRJ7EayU1JCeBVpO4LcT
   notify: false
   verify: false
   visitor: true
@@ -325,14 +325,19 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: ture
+  enable: true
   appId: sGoLYckzN4Cvwjg2m17Pn6PN-MdYXbMMI # Your leancloud application appid
   appKey: 8w6nCRJ7EayU1JCeBVpO4LcT # Your leancloud application appkey
   mode: xCss # DesertsP or xCss
-  placeholder: Write a Comment # Comment box placeholder
+  placeholder: 
+    📌使用QQ邮箱可获取QQ头像\n
+    👨已启用Akismet反垃圾评论\n
+    🚀评论和回复支持M↓ # Comment box placeholder  
   math: true # Support MathJax.
   md: true # Support Markdown.
   enableQQ: true # Enable QQ avatar API.
+  background: /medias/comment_bg.png
+  avatar: 'mm' 
   NoRecordIP: false # Do not record commenter IP.
   visitor: true # Article reading statistics.
   maxNest: 6 # Sub-comment maximum nesting depth.
@@ -354,7 +359,7 @@ minivaline:
   # Available values: en  | zh-CN | (and many more)
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   lang:
-  # Expression Url.
+  # Expression Url. 
   # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
   emoticonUrl:
     - https://cdn.jsdelivr.net/npm/alus@latest
@@ -363,11 +368,12 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
+    - https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/bilibiliHotKey
 
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
+  enable: false
   url: https://github.com/csulibiao/csulibiao.github.io
   title: Fork Me
 
@@ -433,7 +439,7 @@ libs:
     crypto: /libs/cryptojs/crypto-js.min.js
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
-    valine: /libs/valine/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
+    valine: https://unpkg.com/valine@latest/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine@latest/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
     minivaline: https://cdn.jsdelivr.net/npm/minivaline@2.8.2/dist/MiniValine.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
@@ -501,7 +507,7 @@ daovoice:
 
 # Tidio online contact
 tidio:
-  enable: true
+  enable: false
   public_key: tfcwsrlut7cg5xsfg5myaqncbfv9ltvs
 
 #背景canvas-nest
