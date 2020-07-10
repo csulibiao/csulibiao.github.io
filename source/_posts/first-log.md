@@ -5,7 +5,7 @@ tags:
   - Blog
 categories: 文章
 cover: true
-#coverImg: /medias/featureimages/1.jpg
+img: /medias/featureimages/1.jpg
 top: true
 summary: This is my first blog.
 date: 2020-06-16 03:29:00
