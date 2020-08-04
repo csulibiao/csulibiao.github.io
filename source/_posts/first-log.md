@@ -4,8 +4,8 @@ author: 潇湘忆
 tags: 
   - Blog
 categories: 文章
-cover: true
-top: false
+cover: false
+top: true
 summary: This is my first blog.
 date: 2020-06-16 03:29:00
 ---
