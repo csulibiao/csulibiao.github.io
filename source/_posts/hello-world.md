@@ -4,7 +4,7 @@ author: 潇湘忆
 tags: 
   - Hexo
 categories: 前端
-cover: false
+cover: true
 summary: Welcome to Hexo!
 date: 2020-06-15 03:29:35
 ---
