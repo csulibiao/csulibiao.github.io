@@ -1,3 +1,4 @@
 applications:
 - name: hexo-binary
   command: npm run start
+  
