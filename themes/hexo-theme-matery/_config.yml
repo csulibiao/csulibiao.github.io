@@ -309,7 +309,7 @@ livere:
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
-  enable: true
+  enable: false
   appId: sGoLYckzN4Cvwjg2m17Pn6PN-MdYXbMMI
   appKey: 8w6nCRJ7EayU1JCeBVpO4LcT
   notify: false
@@ -325,7 +325,7 @@ valine:
 # MiniValine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: false
+  enable: true
   appId: sGoLYckzN4Cvwjg2m17Pn6PN-MdYXbMMI # Your leancloud application appid
   appKey: 8w6nCRJ7EayU1JCeBVpO4LcT # Your leancloud application appkey
   mode: xCss # DesertsP or xCss
@@ -440,7 +440,7 @@ libs:
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
     valine: https://unpkg.com/valine@latest/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine@latest/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js
+    minivaline: https://cdn.jsdelivr.net/npm/minivaline@5.1.7/dist/MiniValine.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
