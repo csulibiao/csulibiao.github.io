@@ -30,7 +30,7 @@ script:
 
 after_script:
   - cd ./public
-  - echo www.binarying.com > CNAME #生成CANME自定义域名解析
+  - echo www.canghaiyisu.xyz > CNAME #生成CANME自定义域名解析
   - ls -l
   - git init
   - git config user.name "csulibiao"   #修改成自己的github用户名
