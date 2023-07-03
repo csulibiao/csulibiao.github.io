@@ -440,7 +440,7 @@ libs:
     echarts: /libs/echarts/echarts.min.js
     gitalk: /libs/gitalk/gitalk.min.js
     valine: https://unpkg.com/valine@latest/dist/Valine.min.js # 若想保持最新版，请替换为 https://unpkg.com/valine@latest/dist/Valine.min.js  默认为 /libs/valine/Valine.min.js
-    minivaline: https://fastly.jsdelivr.net/npm/minivaline@5.1.7/dist/MiniValine.min.js #/libs/valine/MiniValine.min.js
+    minivaline: https://unpkg.com/minivaline@5.1.7/dist/MiniValine.min.js #/libs/valine/MiniValine.min.js
     jqcloud: /libs/jqcloud/jqcloud-1.0.4.min.js
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
